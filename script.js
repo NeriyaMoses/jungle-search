@@ -19,3 +19,10 @@ document.getElementById("search").addEventListener("click", function () {
     window.location.href = final;
   }
 });
+
+// Add Enter key shortcut for search
+document.getElementById("query").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    document.getElementById("search").click();
+  }
+});
