@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh; /* full viewport height */
+  background-image: url('jungle.avif'); /* your image */
+  background-size: cover; /* cover entire area */
+  background-position: center bottom; /* center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #d9f0d3cc;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #3a5a24;
+  text-shadow: 1px 1px 2px #c8e6a7;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #5a7b3f;
+}
+
+input[type="text"] {
+  width: 450px; /* or whatever width you want */
+  margin: 0 auto; /* centers block horizontally */
+  display: block; /* make margin auto work */
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  border: 2px solid #6c9b3f;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-shadow: inset 0 3px 6px #b9d6a2;
+}
+input[type="text"]:focus {
+  border-color: #a2d149;
+  box-shadow: 0 0 8px #a2d149;
+}
+
+.radio-group {
+  margin: 25px 0 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+label {
+  cursor: pointer;
+  font-weight: 600;
+  color: #45691f;
+  font-size: 1rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+input[type="radio"] {
+  transform: scale(1.3);
+  accent-color: #7bb661;
+  cursor: pointer;
+}
+
+button {
+  background: linear-gradient(135deg, #7bb661, #4a6f3f);
+  color: #f1f8e9;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(74,111,63,0.6);
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #a2d149, #6c9b3f);
+  box-shadow: 0 8px 15px rgba(162,209,73,0.8);
+}
+
+/* Optional small bird icon using emoji for fun */
+.bird-emoji {
+  font-size: 4rem;
+  user-select: none;
+}

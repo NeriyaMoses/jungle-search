@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jungle Bird Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><span class="bird-emoji">🦚</span> Jungle Search<span class="bird-emoji" style="display: inline-block; transform: scaleX(-1);">🦚</span></h1>
+    <p>Pick your search engine, type your query, and explore the jungle!</p>
+
+    <input type="text" id="query" placeholder="Search up anything..." autocomplete="off" />
+
+    <div class="radio-group">
+      <label><input type="radio" name="engine" value="google" checked>Google</label>
+      <label><input type="radio" name="engine" value="bing">Bing</label>
+    </div>
+
+    <button id="search">Search</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
