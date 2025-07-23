@@ -3,7 +3,6 @@ document.getElementById("search").addEventListener("click", function () {
 
   if (query !== "") {
     const engineInput = document.querySelector('input[name="engine"]:checked');
-    const engine = engineInput ? engineInput.value : null
     const engine = engineInput.value;
 
     const code = encodeURIComponent(query).replace(/%20/g, "+");
